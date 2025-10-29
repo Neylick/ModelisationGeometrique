@@ -6,7 +6,7 @@ using UnityEditor.ShaderGraph.Internal;
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 public class CustomCone: MonoBehaviour
 {
-    [SerializeField] int height = 3;
+    [SerializeField] float height = 3;
     [SerializeField] float cut_height = 1.5f;
     [SerializeField] int radius = 3;
     [SerializeField] int meridians = 32;
@@ -20,7 +20,7 @@ public class CustomCone: MonoBehaviour
         List<Vector3> vertices = new List<Vector3>();
         List<int> triangles = new List<int>();
 
-        float cut_rad = 1 - (cut_height / (float) height) * radius;
+        float cut_rad = (1 - (cut_height / height)) * radius;
 
         for(int i = 0; i < meridians; i++)
         {
