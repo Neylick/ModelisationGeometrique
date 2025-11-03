@@ -11,3 +11,12 @@ Scripts : (`*.cs`)
 - CustomCone
 
 Every script can be attached to an empty object and has Serialized Fields for parameters.
+## TP2 
+Scripts : (`*.cs`)
+- OFFMeshLoader
+- ExportButtonEditor (button to export)
+Loads the mesh specified by path
+Button exports the mesh as an off following the given path and file name.
+
+![ImageTP2](Renders/TP2.png)
+
