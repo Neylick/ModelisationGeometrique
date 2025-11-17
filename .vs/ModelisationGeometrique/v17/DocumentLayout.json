@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|c:\\users\\ngraveret\\documents\\modelisationgeometrique\\assets\\scripts\\tp1\\customsphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tp1\\customsphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|c:\\users\\ngraveret\\documents\\modelisationgeometrique\\assets\\scripts\\tp2\\offmeshloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tp2\\offmeshloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|c:\\users\\ngraveret\\documents\\modelisationgeometrique\\assets\\scripts\\tp2\\exportbuttoneditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\assets\\scripts\\tp2\\exportbuttoneditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tp2\\exportbuttoneditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -27,19 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CustomSphere.cs",
+              "DocumentMoniker": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP1\\CustomSphere.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TP1\\CustomSphere.cs",
+              "ToolTip": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP1\\CustomSphere.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TP1\\CustomSphere.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T08:36:51.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "OFFMeshLoader.cs",
               "DocumentMoniker": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP2\\OFFMeshLoader.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TP2\\OFFMeshLoader.cs",
               "ToolTip": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP2\\OFFMeshLoader.cs",
               "RelativeToolTip": "Assets\\Scripts\\TP2\\OFFMeshLoader.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwEsAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwF0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-03T08:47:14.049Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ExportButtonEditor.cs",
               "DocumentMoniker": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP2\\ExportButtonEditor.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TP2\\ExportButtonEditor.cs",
@@ -47,8 +64,7 @@
               "RelativeToolTip": "Assets\\Scripts\\TP2\\ExportButtonEditor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T09:26:49.059Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T09:26:49.059Z"
             }
           ]
         }
