@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|c:\\users\\ngraveret\\documents\\modelisationgeometrique\\assets\\scripts\\tp3\\octree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tp3\\octree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|c:\\users\\ngraveret\\documents\\modelisationgeometrique\\assets\\scripts\\tp1\\customsphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tp1\\customsphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|c:\\users\\ngraveret\\documents\\modelisationgeometrique\\assets\\scripts\\tp2\\offmeshloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\assets\\scripts\\tp2\\offmeshloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tp2\\offmeshloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,19 +35,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Octree.cs",
+              "DocumentMoniker": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP3\\Octree.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TP3\\Octree.cs",
+              "ToolTip": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP3\\Octree.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TP3\\Octree.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAWwIwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T08:42:10.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CustomSphere.cs",
               "DocumentMoniker": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP1\\CustomSphere.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TP1\\CustomSphere.cs",
               "ToolTip": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP1\\CustomSphere.cs",
               "RelativeToolTip": "Assets\\Scripts\\TP1\\CustomSphere.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T08:36:51.778Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "OFFMeshLoader.cs",
               "DocumentMoniker": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP2\\OFFMeshLoader.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TP2\\OFFMeshLoader.cs",
@@ -51,12 +68,11 @@
               "RelativeToolTip": "Assets\\Scripts\\TP2\\OFFMeshLoader.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAgwF0AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T08:47:14.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T08:47:14.049Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ExportButtonEditor.cs",
               "DocumentMoniker": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP2\\ExportButtonEditor.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TP2\\ExportButtonEditor.cs",
