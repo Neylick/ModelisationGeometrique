@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tp3\\octree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|c:\\users\\ngraveret\\documents\\modelisationgeometrique\\assets\\scripts\\tp1\\customsphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\assets\\scripts\\tp1\\customsphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tp1\\customsphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\TP3\\Octree.cs",
               "ToolTip": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP3\\Octree.cs",
               "RelativeToolTip": "Assets\\Scripts\\TP3\\Octree.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAWwIwAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAQwP4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T08:42:10.087Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "Assets\\Scripts\\TP1\\CustomSphere.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T08:36:51.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T08:36:51.778Z"
             },
             {
               "$type": "Document",

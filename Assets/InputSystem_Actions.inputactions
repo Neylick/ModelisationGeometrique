@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "InputSystem_Actions",
     "maps": [
         {
@@ -986,6 +987,54 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "TrackedDeviceOrientation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Paint",
+            "id": "ae082eb7-2e1d-418a-b54b-8b8af6ad601e",
+            "actions": [
+                {
+                    "name": "AddPaint",
+                    "type": "Button",
+                    "id": "96853656-639e-42e7-b1a1-7ff75ff23ddd",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RemovePaint",
+                    "type": "Button",
+                    "id": "c62458dc-d956-4f02-a427-724efd4e53d5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "89074764-f3cb-474d-865e-27f04d5fa02c",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AddPaint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9534ea49-968c-4786-a99c-516d4c4e4e5f",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RemovePaint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
