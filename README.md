@@ -27,3 +27,5 @@ Scripts : (`*.cs`)
 Loads an octree defined by bounds and depth (subdivision, 8 per depth).
 The rendered object inside are defined by the `SceneSDF` function (each object is represented by a signed distance function).
 Note : it would be best to use Unity Objects that later are converted via their parameters to SDFs.
+
+![ImageTp3](Renders/TP3.png)
