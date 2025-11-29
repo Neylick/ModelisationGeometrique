@@ -11,6 +11,7 @@ public class Octree : MonoBehaviour
     [SerializeField] private float CubeScale = 1;
     [SerializeField] private Vector3Int RootSize;
     [SerializeField] private Material CubeMaterial;
+    [SerializeField] private float paintStrength = 0.2f;
     private Bounds RootBounds;
     private OctreeNode Root;
 
@@ -242,8 +243,9 @@ public class Octree : MonoBehaviour
                 cube.transform.parent = this.transform;
 
                 //////////////// Debug color for cube depth ////////////////
-                //MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
-                //renderer.material = new(CubeMaterial);
+                MeshRenderer renderer = cube.GetComponent<MeshRenderer>();
+                renderer.material = new(CubeMaterial);
+                if (node.value - (int)node.value == 0) renderer.material.color = Color.white;
                 ////renderer.material.color = Color.HSVToRGB(360.0f * node.depth / (float) maxDepth, node.depth / (float) maxDepth, 1.0f);
                 //renderer.material.color = Color.green * node.depth / (float) maxDepth;
             }
@@ -254,14 +256,18 @@ public class Octree : MonoBehaviour
     {
         if (node != null && node.bounds.Contains(position))
         {
-            if (node.depth == 1) node.value += value;
+            if (node.depth == 1)
+            {
+                node.value += value;
+                node.value = Mathf.Min(node.value, 8);
+            }
             else
             {
                 node.value = 0;
                 foreach (OctreeNode n in node.children)
                 {
                     _PropagateValue(n, value, position);
-                    node.value += n.value;
+                    node.value += n.IsFilled() ? 1 : 0;
                 }
             }
         }
@@ -337,13 +343,13 @@ public class Octree : MonoBehaviour
         if (addPaintAction.IsPressed())
         {
             // add matter
-            UpdateOctree(Root, 0.01f, PaintTool.transform.position);
+            UpdateOctree(Root, paintStrength, PaintTool.transform.position);
             Debug.Log("Drawing");
         }
         else if(removePaintAction.IsPressed())
         {
             // remove matter
-            UpdateOctree(Root, -0.01f, PaintTool.transform.position);
+            UpdateOctree(Root, -paintStrength, PaintTool.transform.position);
             Debug.Log("Erasing");
         }
     }
