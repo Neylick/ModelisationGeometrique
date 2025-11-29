@@ -24,8 +24,10 @@ Button exports the mesh as an off following the given path and file name.
 ## TP3
 Scripts : (`*.cs`)
 - Octree
-Loads an octree defined by bounds and depth (subdivision, 8 per depth).
-The rendered object inside are defined by the `SceneSDF` function (each object is represented by a signed distance function).
-Note : it would be best to use Unity Objects that later are converted via their parameters to SDFs.
+
+Loads an octree defined by depth (subdivision, 8 per depth).
+The rendered object are defined by the `Scene` (a tree-like structures building a SDF using boolean operations).
+The bounds of the tree are the bounds of the scene.
+Cubes can be painted using the mouse (following a raycast), the ones changed/places are represented as red.
 
 ![ImageTp3](Renders/TP3.png)
