@@ -292,8 +292,8 @@ public class Octree : MonoBehaviour
     void InitScene()
     {
         // Unique sphere in center 
-        //SphereSDF sphereA = new SphereSDF(transform.position, 0.3f);
-        //SceneTree = sphereA;
+        SphereSDF sphereA = new SphereSDF(transform.position, 0.5f);
+        SceneTree = sphereA;
 
         // Unique box in center
         //BoxSDF boxA = new BoxSDF(transform.position, new(.4f, .4f, .4f));
@@ -307,9 +307,9 @@ public class Octree : MonoBehaviour
 
         // Box - Sphere
 
-        SphereSDF sphereD = (new SphereSDF(transform.position + new Vector3(0, 0, -0.5f), .5f));
-        BoxSDF box = (new BoxSDF(transform.position, new Vector3(.5f, .5f, .5f)));
-        SceneTree = new CombinationSDF(box, sphereD, OperationsOnSDF.Substraction);
+        //SphereSDF sphereD = (new SphereSDF(transform.position + new Vector3(0, 0, -0.5f), .5f));
+        //BoxSDF box = (new BoxSDF(transform.position, new Vector3(.5f, .5f, .5f)));
+        //SceneTree = new CombinationSDF(box, sphereD, OperationsOnSDF.Substraction);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
