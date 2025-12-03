@@ -164,6 +164,16 @@ public class OFFMeshCluster: MonoBehaviour
         );
     }
 
+    private int FindInArray(Vector3[] array, Vector3Int value)
+    {
+        for(int i = 0; i < array.Length; i++)
+        {
+            Vector3Int vi = ToCubeCoord(array[i]);
+            if(vi == value) return i;
+        }
+        return -1;
+    }
+
     private void Simplify()
     {
         Vector3 cubeSize = new Vector3(epsilon, epsilon, epsilon);
@@ -210,7 +220,6 @@ public class OFFMeshCluster: MonoBehaviour
             }
             cube_v /= dict[c].Count;
             cube_n /= dict[c].Count;
-            // check triangles(?)
 
             vertices[c_index] = cube_v;
             normals[c_index] = cube_n;
@@ -221,7 +230,9 @@ public class OFFMeshCluster: MonoBehaviour
             c_index++;
         }
 
-        for(int i = 0; i < (mesh.triangles.Length)/3; i++)
+        Dictionary<int, List<int>> edges = new Dictionary<int, List<int>>();
+
+        for (int i = 0; i < (mesh.triangles.Length)/3; i++)
         {
             int i1 = mesh.triangles[i * 3];
             int i2 = mesh.triangles[i * 3 + 1];
@@ -232,25 +243,70 @@ public class OFFMeshCluster: MonoBehaviour
             Vector3Int cv1 = ToCubeCoord(v1);
             Vector3Int cv2 = ToCubeCoord(v2);
             Vector3Int cv3 = ToCubeCoord(v3);
-            if(cv1 != cv2 && cv1 != cv3 && cv2 != cv3)
+            int ic1 = FindInArray(vertices, cv1);
+            int ic2 = FindInArray(vertices, cv2);
+            int ic3 = FindInArray(vertices, cv3);
+
+            if(!edges.ContainsKey(ic1)) edges[ic1] = new List<int>();
+            if(!edges.ContainsKey(ic2)) edges[ic2] = new List<int>();
+            if(!edges.ContainsKey(ic3)) edges[ic3] = new List<int>();
+            
+            edges[ic1].Add(ic2);
+            edges[ic2].Add(ic3);
+            edges[ic3].Add(ic1);
+
+            if(ic1 != ic2 && ic1 != ic3 && ic2 != ic3 && ic1 > 0 && ic2 > 0 && ic3 > 0)
             {
-                int ic1 = Array.IndexOf(vertices, cv1);
-                int ic2 = Array.IndexOf(vertices, cv2);
-                int ic3 = Array.IndexOf(vertices, cv3);
-                if(ic1 > 0 && ic2 > 0 && ic3 > 0)
-                {
-                    triangles.Add(ic1);
-                    triangles.Add(ic2);
-                    triangles.Add(ic3);
-                    Debug.Log("Added triangle");
-                }
+                triangles.Add(ic1);
+                triangles.Add(ic2);
+                triangles.Add(ic3);
             }
+
+            //Debug.Log("Triangle found : " + ic1 + " & " + ic2 + " & " + ic3);
+
+            //if(cv1 != cv2 && cv1 != cv3 && cv2 != cv3)
+            //{
+            //    int ic1 = Array.IndexOf(vertices, cv1);
+            //    int ic2 = Array.IndexOf(vertices, cv2);
+            //    int ic3 = Array.IndexOf(vertices, cv3);
+            //    if(ic1 > 0 && ic2 > 0 && ic3 > 0)
+            //    {
+            //        triangles.Add(ic1);
+            //        triangles.Add(ic2);
+            //        triangles.Add(ic3);
+            //        Debug.Log("Added triangle");
+            //    }
+            //}
         }
+
+        //foreach(int key in edges.Keys)
+        //{
+        //    List<int> connected = edges[key];
+        //    int p0 = key;
+        //    for(int i = 0; i < connected.Count; i++)
+        //    {
+        //        int p1 = connected[i];
+        //        List<int> otherConnects = edges[p1];
+        //        for (int j = 0; j < otherConnects.Count; j++)
+        //        {
+        //            int p2 = otherConnects[j];
+        //            if (connected[i] != otherConnects[j] && edges[p2].Contains(key))
+        //            {
+        //                triangles.Add(p0);
+        //                triangles.Add(p1);
+        //                triangles.Add(p2);
+        //                Debug.Log("Added triangle via edges");
+        //            }
+        //        }
+        //    }
+        //}
 
         otherMesh.SetVertices(vertices);
         otherMesh.SetNormals(normals);
         otherMesh.SetColors(otherColors);
         otherMesh.SetTriangles(triangles.ToArray(), 0);
+
+        Debug.Log("Simplified mesh with " + filledCubeCount + " vertices, and " + triangles.Count + " triangles");
     }
 
     public void ExportToOFF()
