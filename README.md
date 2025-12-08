@@ -31,3 +31,13 @@ The bounds of the tree are the bounds of the scene.
 Cubes can be painted using the mouse (following a raycast), the ones changed/places are represented as red.
 
 ![ImageTp3](Renders/TP3.png)
+
+## TP4
+Scripts : (`*.cs`)
+- OFFMeshClustering
+
+Loads a mesh from on OFF file at the specified path.
+Renders the mesh using a material showing the cubes u,v,w coordinate range.
+Simplifies the mesh in a (given) object's mesh with the same material showing.
+
+![ImageTP4](Render/TP4.png)
