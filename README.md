@@ -40,4 +40,4 @@ Loads a mesh from on OFF file at the specified path.
 Renders the mesh using a material showing the cubes u,v,w coordinate range.
 Simplifies the mesh in a (given) object's mesh with the same material showing.
 
-![ImageTP4](Render/TP4.png)
+![ImageTP4](Renders/TP4.png)
