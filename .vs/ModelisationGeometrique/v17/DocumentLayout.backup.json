@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|c:\\users\\ngraveret\\documents\\modelisationgeometrique\\assets\\scripts\\tp5\\offmeshsubdivision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tp5\\offmeshsubdivision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|c:\\users\\ngraveret\\documents\\modelisationgeometrique\\assets\\scripts\\tp4\\offmeshclustering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tp4\\offmeshclustering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,12 +27,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "OFFMeshSubdivision.cs",
+              "DocumentMoniker": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP5\\OFFMeshSubdivision.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TP5\\OFFMeshSubdivision.cs",
+              "ToolTip": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP5\\OFFMeshSubdivision.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TP5\\OFFMeshSubdivision.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T08:25:17.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "OFFMeshClustering.cs",
               "DocumentMoniker": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP4\\OFFMeshClustering.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TP4\\OFFMeshClustering.cs",
               "ToolTip": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP4\\OFFMeshClustering.cs",
               "RelativeToolTip": "Assets\\Scripts\\TP4\\OFFMeshClustering.cs",
-              "ViewState": "AgIAAM4AAAAAAAAAAAAQwOEAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAABAAAAAAAAAAAgwCMBAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T08:24:45.007Z",
               "EditorCaption": ""

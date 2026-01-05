@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|c:\\users\\ngraveret\\documents\\modelisationgeometrique\\assets\\scripts\\tp4\\offmeshclustering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tp4\\offmeshclustering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|c:\\users\\ngraveret\\documents\\modelisationgeometrique\\assets\\scripts\\tp5\\offmeshsubdivision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tp5\\offmeshsubdivision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|c:\\users\\ngraveret\\documents\\modelisationgeometrique\\assets\\scripts\\tp5\\chaikinpolyline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE8674E-B1D6-3FDF-AC59-72E9B7BD40E4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tp5\\chaikinpolyline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OFFMeshClustering.cs",
-              "DocumentMoniker": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP4\\OFFMeshClustering.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\TP4\\OFFMeshClustering.cs",
-              "ToolTip": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP4\\OFFMeshClustering.cs",
-              "RelativeToolTip": "Assets\\Scripts\\TP4\\OFFMeshClustering.cs",
-              "ViewState": "AgIAAO4AAAAAAAAAAAAgwPkAAABFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ChaikinPolyLine.cs",
+              "DocumentMoniker": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP5\\ChaikinPolyLine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TP5\\ChaikinPolyLine.cs",
+              "ToolTip": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP5\\ChaikinPolyLine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TP5\\ChaikinPolyLine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T08:24:45.007Z",
+              "WhenOpened": "2026-01-05T08:26:13.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OFFMeshSubdivision.cs",
+              "DocumentMoniker": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP5\\OFFMeshSubdivision.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TP5\\OFFMeshSubdivision.cs",
+              "ToolTip": "C:\\Users\\ngraveret\\Documents\\ModelisationGeometrique\\Assets\\Scripts\\TP5\\OFFMeshSubdivision.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TP5\\OFFMeshSubdivision.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAEwKgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T08:25:17.702Z",
               "EditorCaption": ""
             }
           ]
