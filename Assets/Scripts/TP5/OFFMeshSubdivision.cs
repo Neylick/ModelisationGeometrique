@@ -31,7 +31,7 @@ public class OFFMeshSubdivision : MonoBehaviour
         else
         {
             string[] lines = File.ReadAllLines(ImportPath);
-            bool is_off = lines[0] == "OFF";
+            bool is_off = (lines[0] == "OFF" || lines[0] == "NOFF");
             if (!is_off)
             {
                 Debug.LogError("Not a valid OFF file");
@@ -161,8 +161,12 @@ public class OFFMeshSubdivision : MonoBehaviour
             List<Vector3> normals = new();
             List<Color> otherColors = new();
 
+            Debug.Log("Subdivision level " + (level + 1) + "/" + subdivisionLevels);
+
+            int start_v_count = vertices.Count;
+
             // Add Edges & Midpoints
-            for (int i = 0; i < (mesh.triangles.Length) / 3; i++)
+            for (int i = 0; i < (prevTriangles.Count) / 3; i++)
             {
                 int i1 = prevTriangles[i * 3];
                 int i2 = prevTriangles[i * 3 + 1];
@@ -221,17 +225,20 @@ public class OFFMeshSubdivision : MonoBehaviour
             }
 
             // Recalculate vertices from edges
-            for (int i = 0; i < mesh.vertices.Length; i++)
+            for (int j = 0; j < start_v_count; j++)
             {
-                int n = edges[i].Count;
+                if(!edges.ContainsKey(j)) continue;
+                int n = edges[j].Count;
                 float alpha = ComputeAlpha(n);
                 Vector3 neighSum = Vector3.zero;
-                foreach (int neigh in edges[i]) neighSum += vertices[neigh];
-                vertices[i] = (1 - (n * alpha)) * vertices[i] + alpha * neighSum;
+                foreach (int neigh in edges[j]) 
+                    neighSum += vertices[neigh];
+
+                vertices[j] = (1 - (n * alpha)) * vertices[j] + alpha * neighSum;
             }
 
-            otherMesh.SetTriangles(triangles.ToArray(), 0);
             otherMesh.SetVertices(vertices);
+            otherMesh.SetTriangles(triangles.ToArray(), 0);
             //otherMesh.SetColors(otherColors);
 
             prevTriangles = new(triangles);

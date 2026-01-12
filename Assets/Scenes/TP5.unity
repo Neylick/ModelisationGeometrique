@@ -1109,9 +1109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3baddc5d00d62640967f5f8bfce0a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OFFMeshSubdivision
-  ImportPath: Assets/Meshes/bunny.off
+  ImportPath: Assets/Meshes/bunny_simplified.off
   ExportPath: Assets/Meshes/off_export.off
-  epsilon: 0.1
+  subdivisionLevels: 2
   otherMeshObj: {fileID: 1152483054}
 --- !u!1 &1934773144
 GameObject:

@@ -836,8 +836,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OFFMeshCluster
   ImportPath: Assets/Meshes/bunny.off
-  ExportPath: Assets/Meshes/off_export.off
-  epsilon: 0.2
+  ExportPath: Assets/Meshes/bunny_simplified.off
+  epsilon: 0.1
   otherMeshObj: {fileID: 1152483054}
 --- !u!23 &1880275787
 MeshRenderer:

@@ -36,8 +36,19 @@ Cubes can be painted using the mouse (following a raycast), the ones changed/pla
 Scripts : (`*.cs`)
 - OFFMeshClustering
 
-Loads a mesh from on OFF file at the specified path.
-Renders the mesh using a material showing the cubes u,v,w coordinate range.
+Loads a mesh from an OFF file at the specified path.
 Simplifies the mesh in a (given) object's mesh with the same material showing.
+Renders the mesh using a material showing the cubes u,v,w coordinate range.
 
 ![ImageTP4](Renders/TP4.png)
+
+## TP5
+Scripts : (`*.cs`)
+- ChaikinPolyLine
+- OFFMeshSubdivision
+
+Renders a simple Chaikin's algorithm polypath (as a gizmo). 
+Loads a mesh from an OFF file at the specified path.
+Renders the mesh subivided via Loop's algorithm, using a parameter specifying iteration count.
+
+![ImageTP5](Renders/TP5.png)
